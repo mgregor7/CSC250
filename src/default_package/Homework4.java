@@ -22,12 +22,12 @@ public class Homework4
 	{
 		int decimal = 0;
 		int n = 0;
-		int binaryInt = Integer.parseInt(binary);
-		while(binaryInt != 0)
+		long binarylong = Long.parseLong(binary);
+		while(binarylong != 0)
 		{
-			int temp = binaryInt % 10;
+			long temp = binarylong % 10;
 			decimal += temp*Math.pow(2,n);
-			binaryInt = binaryInt/10;
+			binarylong = binarylong/10;
 			n++;
 		}
 	return decimal;
